@@ -11,6 +11,7 @@
     "bs": "node bs-config.js"
   },
   "dependencies": {
+    "axios": "^1.7.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
   },
@@ -19,8 +20,6 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
-    "browser-sync": "^2.29.3",
-    "browser-sync-webpack-plugin": "^2.3.0",
     "eslint": "^9.13.0",
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.0.0",

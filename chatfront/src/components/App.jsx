@@ -5,9 +5,11 @@ export default function App() {
     const [socket, setSocket] = useState(null)
     const [name, setName] = useState('')
     const [msg, setMsg] = useState('')
+    
+
 
     useEffect(() => {
-        const socket = new WebSocket('ws://127.0.0.1:8000/ws/chat/')
+        const socket = new WebSocket('ws://192.168.0.182:8000/ws/chat/')
         
         socket.onopen = () => {
             setSocket(socket)
