@@ -7,7 +7,7 @@ export default function App() {
     const [msg, setMsg] = useState('')
 
     useEffect(() => {
-        const socket = new WebSocket('ws://127.0.0.1:8000/ws/chat/')
+        const socket = new WebSocket('ws://192.168.85.91:8000/ws/chat/')
         
         socket.onopen = () => {
             setSocket(socket)
@@ -27,7 +27,6 @@ export default function App() {
         if (name && msg) {
             socket.send(JSON.stringify({name: name, message: msg}))
             setMsg('')
-            setName('')
         }
     }
     
